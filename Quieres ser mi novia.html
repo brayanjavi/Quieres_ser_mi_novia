@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quieres ser mi novia</title>
+</head>
+<body bgcolor="aqua">
+    <h1 align=center >Quieres ser mi novia </h1>
+   <script>
+
+     function accionParaCuandoEllaDigaQueSi()
+     {
+       alert("Ahora somos novios :3 ");
+       
+       
+     }
+   // btnsi = document.getElementById('btnSi')
+
+
+    /*btnsi.getElementById('click',function(){
+    document.getElementById('img').src="C:\Users\BJMO\Downloads\cd20ef45-8c9f-43c3-80b5-8b2c84212d54.png";
+    });
+    */
+
+     
+
+     function mueveElBoton()
+     {
+         Width = window.innerWidth;
+         Height = window.innerHeight;
+
+         newWidth = (Math.random()*Width);
+         newHeight = (Math.random()*Height);
+
+         document.getElementById('btnNo').style.position = "absolute";
+         document.getElementById('btnNo').style.left = newWidth + "px";
+         document.getElementById('btnNo').style.top = newHeight + "px";
+     }
+
+
+   </script> 
+   <div style="text-align: center; margin-top: 10%;">
+   <input type="button" style="color: blue;" onclick="accionParaCuandoEllaDigaQueSi()" padding: 10px 20px; id="btnSi" value="Si" />
+   <input type="button" style="color: darkred;" id="btnNo" onmouseover="mueveElBoton()" padding: 10px 20px;  value="No"  />
+   </div>
+</body>
+</html>
